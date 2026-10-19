@@ -1,0 +1,42 @@
+브라우저에서 실습하기
+====================
+index.html을 더블클릭하거나 브라우저 창으로 끌어 넣으면 실행됩니다.
+서버, Python 설치, 외부 패키지 또는 인터넷 연결이 필요하지 않습니다.
+상단의 다섯 가지 실습 중 하나를 선택한 뒤 값을 입력하고 실행하세요.
+구구단은 표로 출력되며, 숫자 게임에는 시도 횟수와 기록이 표시됩니다.
+각 실습 하단에서 Python 코드와 문제 설명을 펼쳐 볼 수 있습니다.
+화면의 계산은 JavaScript로 처리하며 Python 파일을 직접 실행하지 않습니다.
+Python 모듈 수정 내용은 HTML에 자동 반영되지 않습니다.
+HTML 화면의 동작을 수정하려면 index.html의 script 영역을 수정하세요.
+새로고침하면 입력값과 게임 기록이 초기화됩니다.
+
+기존 Python 실행 방법
+====================
+Python 기초 모듈 실습
+
+실행 방법
+1. Python이 설치된 환경에서 day01_practice/main.py를 실행하세요.
+   VS Code에서는 main.py를 열고 Python 파일 실행 버튼을 누르면 됩니다.
+2. 터미널에서 실행하려면 상위 폴더에서 다음 명령을 사용하세요.
+   python day01_practice/main.py
+   또는 python -m day01_practice
+   Windows의 Python 실행 명령이 py인 경우 python 대신 py를 사용하세요.
+3. 메뉴에서 1~5를 선택하고, 종료하려면 0을 입력하세요.
+
+폴더 구성
+main.py: 실습 모듈을 불러오고 메뉴와 입력 오류 처리를 담당합니다.
+__main__.py: python -m day01_practice 실행을 지원합니다.
+__init__.py: 폴더를 Python 패키지로 구성합니다.
+exercises/variables.py: 변수와 덧셈
+exercises/conditions.py: 입력과 합격 판정
+exercises/lists.py: 리스트와 짝수 찾기
+exercises/multiplication.py: 중첩 반복문과 구구단
+exercises/number_game.py: 숫자 맞추기 게임
+exercises/__init__.py: 실습 패키지 표시
+
+복습 방법
+각 실습 모듈에는 기존 목표, 문제, 정답 예시, 복습 포인트, 추가 도전이 있습니다.
+문제를 읽고 해당 함수의 코드를 직접 수정한 다음 main.py로 실행해 보세요.
+import는 다른 파일의 함수를 불러오는 문법입니다.
+모듈을 불러오기만 할 때는 게임이나 입력이 시작되지 않습니다.
+외부 패키지 설치는 필요하지 않으며, random은 Python 표준 라이브러리입니다.
